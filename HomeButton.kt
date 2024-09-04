@@ -55,16 +55,16 @@
                     modifier = Modifier
                         .size(64.dp)
                         .background(
-                            color = if (isDarkTheme) SplashScreenBackgroundLight else Color.White, // Cambia color del círculo
+                            color = if (isDarkTheme) SplashScreenBackgroundLight else Color.White, 
                             shape = CircleShape
                         ),
                     contentAlignment = Alignment.Center
                 ) {
-                    // Usamos los recursos de los íconos directamente sin tintarlos
+                  
                     Icon(
                         painter = icon,
                         contentDescription = text,
-                        tint = Color.Unspecified // No se aplica ningún tinte
+                        tint = Color.Unspecified
                     )
                 }
                 Spacer(modifier = Modifier.height(16.dp))
